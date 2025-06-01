@@ -171,17 +171,17 @@ header .head-left .logo span {
   top: 50%;
   left: 5%;
   font-size: 2rem;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   cursor: pointer;
 }
 header .head-left h1,
 header .head-left h1 span {
   font-family: "Abril Fatface", cursive;
   letter-spacing: 0.15rem;
-  font-size: 2rem;
+  font-size: 1.3rem;
   color: var(--header-text);
-  height: 7rem;
-  line-height: 7rem;
+  height: 6rem;
+  line-height: 6rem;
   cursor: pointer;
 }
 header .head-left h1 .span {
@@ -201,11 +201,12 @@ header nav ul li a {
   text-decoration: none;
   color: var(--nav-link-color);
   position: relative;
+  font-size: 0.8rem;
 }
 header nav ul li a::after {
   content: "";
   width: 0%;
-  height: 0.2rem;
+  height: 0.1rem;
   background-color: var(--reset-color);
   position: absolute;
   top: 105%;
@@ -224,8 +225,8 @@ header .head-right {
   align-items: center;
 }
 header .head-right button {
-  width: 5rem;
-  height: 3rem;
+  width: 4rem;
+  height: 2.5rem;
   margin-left: 1rem;
   border: none;
   border-radius: 8px;
@@ -235,7 +236,7 @@ header .head-right button {
   background-color: var(--btn-bg);
   color: var(--text-light);
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   transition: 300ms;
 }
 header .head-right button:hover {
@@ -246,6 +247,10 @@ header .head-right button:active {
 }
 header .head-right .cart {
   background-color: transparent;
+}
+header .head-right .cart span,
+header .aside-btn span {
+  font-size: 1.2rem;
 }
 header .head-right .cart:hover {
   background-color: transparent;
@@ -263,7 +268,4 @@ header .aside-btn {
   color: var(--header-text);
   margin-top: 4px;
   cursor: pointer;
-}
-header .aside-btn span {
-  font-size: 1.7rem;
 }
