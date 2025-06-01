@@ -2,7 +2,7 @@
 /* =============== 💠 GOOGLE FONTS 💠 ================= */
 /* =================================================== */
 @import url("https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap");
 /* =================================================== */
 /* ========== 🖱️ CUSTOM SCROLLBAR STYLES ============ */
 /* =================================================== */
@@ -13,22 +13,22 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary); /* Scroll track */
+  background: var(--scrollbar-track); /* Scroll track */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--btn-bg); /* Scroll thumb */
+  background: var(--scrollbar-thumb); /* Scroll thumb */
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--box-shadow-dark);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--btn-hover-bg); /* Thumb on hover */
+  background: var(--scrollbar-thumb-hover); /* Thumb on hover */
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  background: var(--btn-bg);
+  background: transparent;
 }
 
 /* =================================================== */
@@ -46,3 +46,224 @@
 /* =================================================== */
 /* ============= 🎨 COLOR VARIABLES 🎨 ================ */
 /* =================================================== */
+:root {
+  /* ===== Primary Palette ===== */
+  --primary-color: #4caf50;
+  --primary-color-light: #81c784;
+  --primary-color-dark: #388e3c;
+
+  /* ===== Accent & Backgrounds ===== */
+  --accent-color: #a5d6a7;
+  --background-color: #f0fdf4;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* ===== Borders ===== */
+  --border-color: #c8e6c9;
+  --border-dark: #81c784;
+
+  /* ===== Header ===== */
+  --header-bg: #2e7d32;
+  --header-text: #ffffff;
+
+  /* ===== Header Nav Links ===== */
+  --nav-link-color: #c8e6c9; /* default link color in header */
+  --nav-link-hover: #ffffff; /* link hover */
+  --nav-link-active: #a5d6a7; /* active page */
+  --nav-link-bg-hover: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* optional background effect on hover */
+
+  /* ===== Footer ===== */
+  --footer-bg: #1b5e20;
+  --footer-text: #d0f8ce;
+  --footer-link: #a5d6a7;
+  --footer-link-hover: #c8e6c9;
+
+  /* ===== Aside / Sidebar ===== */
+  --aside-bg: #e8f5e9;
+  --aside-border: #a5d6a7;
+
+  /* ===== Main Content ===== */
+  --main-bg: #f1f8e9;
+  --main-text: #1b5e20;
+
+  /* ===== Headings ===== */
+  --h1-color: #2e7d32;
+  --heading-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+  /* ===== Logo ===== */
+  --logo-bg: #c8e6c9;
+  --logo-text: #1b5e20;
+  --logo-shadow: 0 2px 4px rgba(56, 142, 60, 0.3);
+
+  /* ===== Text Variants ===== */
+  --text-color: #1b5e20;
+  --text-light: #ffffff;
+  --text-muted: #4e4e4e;
+  --text-dark: #263238;
+  --text-success: #2e7d32;
+  --text-error: #d32f2f;
+
+  /* ===== Buttons ===== */
+  --btn-bg: var(--primary-color);
+  --btn-bg-hover: var(--primary-color-dark);
+  --btn-text: var(--text-light);
+
+  /* ===== Icons ===== */
+  --icon-color: #388e3c;
+  --icon-hover: #66bb6a;
+
+  /* ===== Blobs & Shapes ===== */
+  --blob-green: #a5d6a7;
+  --blob-light: #e8f5e9;
+  --blob-dark: #66bb6a;
+  --shape-bg: #c8e6c9;
+  --shape-accent: #b9f6ca;
+
+  /* ===== Waves (SVG section dividers) ===== */
+  --wave-color: #e8f5e9;
+  --wave-dark: #c8e6c9;
+  --wave-accent: #a5d6a7;
+
+  /* ===== Shadows ===== */
+  --box-shadow-light: 0 2px 6px rgba(76, 175, 80, 0.1);
+  --box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);
+  --box-shadow-strong: 0 6px 20px rgba(56, 142, 60, 0.25);
+
+  /* reset color */
+  --reset-color: #ffffff;
+}
+:root {
+  /* ===== Scrollbar Colors ===== */
+  --scrollbar-track: #e8f5e9; /* Track background */
+  --scrollbar-thumb: #4caf50; /* Scroll thumb */
+  --scrollbar-thumb-hover: #388e3c; /* Scroll thumb hover */
+  --scrollbar-thumb-active: #2e7d32; /* Thumb on click */
+  --scrollbar-border: #a5d6a7; /* Optional border on thumb */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  padding: 1rem;
+}
+header {
+  width: 98%;
+  margin-left: 0.2rem;
+  background-color: var(--header-bg);
+  border-radius: 25px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header .head-left .logo span {
+  color: var(--header-text);
+  flex: none;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 2rem;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+header .head-left h1,
+header .head-left h1 span {
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 0.15rem;
+  font-size: 2rem;
+  color: var(--header-text);
+  height: 7rem;
+  line-height: 7rem;
+  cursor: pointer;
+}
+header .head-left h1 .span {
+  color: var(--blob-dark);
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header nav ul li {
+  margin-left: 3rem;
+  position: relative;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  position: relative;
+}
+header nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 0.2rem;
+  background-color: var(--reset-color);
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 300ms;
+}
+header nav ul li a:hover::after {
+  width: 100%;
+}
+header nav ul li a:active {
+  color: var(--nav-link-active);
+}
+header .head-right {
+  display: flex;
+  align-items: center;
+}
+header .head-right button {
+  width: 5rem;
+  height: 3rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--btn-bg);
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 300ms;
+}
+header .head-right button:hover {
+  background-color: var(--btn-bg-hover);
+}
+header .head-right button:active {
+  border: 2px solid var(--reset-color);
+}
+header .head-right .cart {
+  background-color: transparent;
+}
+header .head-right .cart:hover {
+  background-color: transparent;
+  transform: scale(100%);
+}
+header .aside-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex: none;
+  position: absolute;
+  left: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--header-text);
+  margin-top: 4px;
+  cursor: pointer;
+}
+header .aside-btn span {
+  font-size: 1.7rem;
+}
